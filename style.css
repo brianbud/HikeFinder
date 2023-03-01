@@ -54,5 +54,107 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 * {
-  outline: 1px dotted red;
+  /* outline: 1px dotted red; */
 }
+
+/* MAIN STYLING */
+
+.blogs-container {
+  padding: 1em;
+}
+
+/* NAV SECTION */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+/* HERO SECTION */
+
+.hero {
+  background: url('./images/hero.jpg') center;
+  color: #FFFFFF;
+  height: 20em;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+button {
+  background-color:#638A5C;
+  color:#FFFFFF;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-btn {
+  border: 1px solid white;
+  border-radius: 0px;
+}
+
+.search {
+  display: flex;
+}
+
+input {
+  border: none;
+  flex-grow: 1;
+}
+
+/* BLOGS SECTION */
+
+.blog-container-title {
+  padding: 1em 0 0 .75em;
+}
+.blogs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+/* PROMOTION SECTION */
+
+.promotion-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  background-color: #FAFAFA;
+  padding: 3em 5em;
+}
+
+.promotion-item img {
+  display: inline;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 3em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+footer nav {
+  justify-content: center;
+}
+
+footer nav ul {
+  gap: 1em;
+}
+

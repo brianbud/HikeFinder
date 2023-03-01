@@ -16,15 +16,17 @@
     </nav>
     <main>
       <div class="hero">
-        <h1>Find your Next Adventure</h1>
+        <h1>Find your Next <span>Adventure</span></h1>
         <p>
           Your next hiking adventure awaits. Get on the trail with detailed maps
           and updates shared by hikers like you.
         </p>
-        <input type="text" />
-        <button>SEARCH</button>
+        <div class="search">
+          <input type="text" placeholder="Search by city" />
+          <button class="search-btn">SEARCH</button>
+        </div>
       </div>
-      <h2>Hikes Near Toronto</h2>
+      <h2 class="blog-container-title">Hikes Near Bergen</h2>
       <section class="blogs-container">
         <div class="blog">
           <img src="./images/image1.jpg" atl="placeholder" />
@@ -95,8 +97,10 @@
             <li>SIGN UP</li>
           </ul>
         </nav>
-        <div>HikeFinder</div>
-        <small>&copy; Copyright 2023, HikeFinder</small>
+        <div>
+          <div>HikeFinder</div>
+          <small>&copy; Copyright 2023, HikeFinder</small>
+        </div>
       </footer>
     </main>
     <script type="module" src="/main.js"></script>
