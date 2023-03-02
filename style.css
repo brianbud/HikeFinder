@@ -62,6 +62,12 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+.blog button {
+  margin-top: 1em;
+  padding: .5em 1em;
+  cursor: pointer;
+}
+
 .logo, .blog-container-title, h3 {
   font-weight: 700;
 }
@@ -79,6 +85,10 @@ p {
   font-size: 1em;
 }
 
+.promotion-container p {
+  font-weight: 600;
+}
+
 .description {
   color: #6F6F6F;
   line-height: 150%;
@@ -90,6 +100,21 @@ p {
 
 .blogs-container {
   padding: 1em;
+}
+
+.fa-star {
+  color: #638A5C; 
+}
+
+.fa-magnifying-glass {
+  color:rgb(0, 0, 0);
+  background-color: #FFFFFF;
+  padding: 1em;
+  border-radius: 5px 0 0 5px;
+}
+
+input:focus {
+  outline: none;
 }
 
 /* NAV SECTION */
@@ -126,7 +151,7 @@ p {
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #f2f2f2;
   color: black;
 }
 
@@ -169,12 +194,16 @@ button {
   background-color:#638A5C;
   color:#FFFFFF;
   border: none;
-  border-radius: 4px;
 }
 
 .search-btn {
-  border: 1px solid white;
-  border-radius: 0px;
+  border: 5px solid white;
+  border-radius: 0 5px 5px 0;
+}
+
+.search-btn:hover {
+  cursor: pointer;
+  background-color: #78a770;
 }
 
 .search {
@@ -213,6 +242,11 @@ input {
   display: inline;
 }
 
+.promotion-item a {
+  color: #62895B;
+  text-decoration: none;
+}
+
 /* FOOTER */
 
 footer {
@@ -221,15 +255,26 @@ footer {
   text-align: center;
   padding: 2em 0;
   display: flex;
+  align-content: space-between;
+  align-items: center;
   flex-direction: column;
   gap: 1em;
 }
 
-footer nav {
-  justify-content: center;
+footer nav ul li {
+  align-items: center;
 }
 
 footer nav ul {
-  gap: 1em;
+  display: flex;
+  list-style-type: none;
 }
 
+footer li {
+  margin-right: 1em;
+}
+
+footer li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
