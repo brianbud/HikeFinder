@@ -3,16 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>HikeFinder</title>
   </head>
   <body>
-    <nav>
-      <div>HikeFinder</div>
-      <ul>
-        <li>Sign Up</li>
-        <li>Log In</li>
-      </ul>
+    <nav class="topnav">
+      <a href="#home" class="active">
+        <div>
+          <img src="./images/logo.png" alt="" />
+          <h1>HikeFinder</h1>
+        </div></a
+      >
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" id="hamburgerMenuIcon">
+        <i class="fa fa-bars"></i>
+      </a>
     </nav>
     <main>
       <div class="hero">
@@ -30,9 +51,9 @@
       <section class="blogs-container">
         <div class="blog">
           <img src="./images/image1.jpg" atl="placeholder" />
-          <h2>Floyen</h2>
-          <p>Length: 10km - Est 5h</p>
-          <p>
+          <h2 class="title">Floyen</h2>
+          <p class="distance-info">Length: 10km - Est 5h</p>
+          <p class="description">
             Fløibanen is one of Norway's most visited attractions. At the top of
             Fløyen you will find a large and varied hiking area, spectacular
             views of the city.
@@ -41,9 +62,9 @@
         </div>
         <div class="blog">
           <img src="./images/image2.jpg" atl="placeholder" />
-          <h2>Ulriken</h2>
-          <p>Length: 3.5 km - Est. 2 h 30 m</p>
-          <p>
+          <h2 class="title">Ulriken</h2>
+          <p class="distance-info">Length: 3.5 km - Est. 2 h 30 m</p>
+          <p class="description">
             Ulriken is the highest of the Seven Mountains that surround the city
             of Bergen, Norway. It has a height of 643 meters (2,110 ft) above
             sea level.
@@ -52,9 +73,9 @@
         </div>
         <div class="blog">
           <img src="./images/image3.jpg" atl="placeholder" />
-          <h2>Landåsfjellet</h2>
-          <p>Length: 3.5 km - Est. 2 h 30 m</p>
-          <p>
+          <h2 class="title">Landåsfjellet</h2>
+          <p class="distance-info">Length: 3.5 km - Est. 2 h 30 m</p>
+          <p class="description">
             Landåsfjellet is a lower plateau south of Ulriken/Haugavarden which
             offers numerous trails, and is almost a separate hiking region by
             its own.
