@@ -168,7 +168,7 @@ input:focus {
 /* HERO SECTION */
 
 .hero {
-  background: url('./images/hero.jpg') center;
+  background: url('./images/hero.jpg') no-repeat center;
   color: #FFFFFF;
   height: 20em;
   display: flex;
@@ -327,4 +327,20 @@ footer li:hover {
     outline: 2px solid black;
   }
 
+  .hero {
+    background: url('./images/hero.jpg') no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero-info {
+    width: 50%;
+  }
+
+  .search {
+    margin-top: auto;
+    margin-bottom: 1em ;
+  }
 }
