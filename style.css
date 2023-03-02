@@ -165,13 +165,6 @@ input:focus {
   display: flex;
   align-items: center;
 }
-
-.topnav img {
-  width: 2em;
-  height: 2em;
-}
-
-
 /* HERO SECTION */
 
 .hero {
@@ -277,4 +270,61 @@ footer li {
 footer li:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 700px) {
+
+/* NAV SECTION */
+
+  nav {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-options {
+    display: block;
+    padding: 1em 1em;
+  }
+
+  .nav-options a {
+    display: inline-block;
+    font-weight: 600 ;
+    margin: 0 .2em;
+  }
+
+  .fa-bars {
+    background-color: red;
+    display: none;
+  }
+
+  .topnav #myLinks {
+    display: block;
+  }
+
+  #hamburgerMenuIcon {
+    display: none;
+  }
+
+  .signup-btn, .login-btn {
+    border-radius: 5px;
+  }
+
+  nav .signup-btn {
+    background-color:#638a5c;
+    outline: 2px solid #638a5c;
+    color: rgb(255, 255, 255);
+  }
+
+  nav .signup-btn:hover {
+    background-color:#79af70;
+    outline: 2px solid #79af70;
+    color: rgb(255, 255, 255);
+  }
+
+  nav .login-btn {
+    outline: 2px solid black;
+  }
+
 }
