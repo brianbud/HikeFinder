@@ -343,4 +343,13 @@ footer li:hover {
     margin-top: auto;
     margin-bottom: 1em ;
   }
+
+  /* PROMOTION SECTIION */
+
+  .promotion-container {
+    display: flex;
+    flex-direction: row;
+    padding: 5em 1em;
+  }
+
 }
