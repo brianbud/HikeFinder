@@ -117,6 +117,10 @@ input:focus {
   outline: none;
 }
 
+.map {
+  display: none;
+}
+
 /* NAV SECTION */
 
 /* Style the navigation menu */
@@ -406,12 +410,23 @@ footer li:hover {
     width: 100%;
   }
 
-  .explore-blog > img {
-    width: 10%;
+  .explore-blog img {
+    width: 30%;
   }
 
-  .google-map-img {
+  .map {
+    display: block;
     width: 100%;
+  }
+
+  .explore-aside-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .explore-aside-container img {
+    margin-left: auto;
+    width: 50%;
   }
 
 }
