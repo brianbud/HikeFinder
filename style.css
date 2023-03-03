@@ -352,4 +352,39 @@ footer li:hover {
     padding: 5em 1em;
   }
 
+  /* BLOGS  */
+
+  .blogs-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .blog {
+    display: flex;
+  }
+
+  .blog-info {
+    width: 40%;
+    padding: 5em;
+  }
+
+  .left {
+    order: -1;
+  }
+
+  /* FOOTER */
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3em 5em;
+  }
+
+  footer div:nth-of-type(2) {
+    order: -1;
+  }
+
 }
