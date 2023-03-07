@@ -370,6 +370,11 @@ footer li:hover {
     justify-content: center;
   }
 
+  .blog img {
+    height: 100%;
+    object-fit: cover;
+  }
+
   .blog-info {
     width: 40%;
     padding: 5em;
