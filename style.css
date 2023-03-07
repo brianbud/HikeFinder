@@ -367,6 +367,7 @@ footer li:hover {
 
   .blog {
     display: flex;
+    justify-content: center;
   }
 
   .blog-info {
